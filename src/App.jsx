@@ -60,7 +60,9 @@ const handleSearch = async () => {
         <button className='btnIcon' onClick={handleSearch} >
           <img id="lupa-icon" src={lupaIcon} alt="icone de lupa" />
         </button>
-          <input id='input' type="text" placeholder='Search the username here' value={username} onChange={(e) => setUsername(e.target.value)} />
+          <input id='input' type="text" placeholder='Search the username here' value={username} onChange={(e) => setUsername(e.target.value)}  onKeyDown={(e) => {
+    if (e.key === "Enter") handleSearch(); 
+  }} />
 
         <div className='boxInfo'>
           <div id='profile'>
