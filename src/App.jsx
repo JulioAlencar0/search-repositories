@@ -84,19 +84,19 @@ const handleSearch = async () => {
             <Component
             img={iconLocation}
             title="LOCATION"
-            subtitle={userdata?.location || "Não especificado"}
+            subtitle={userdata?.location || "Not specified"}
             />
             <Component
             img={iconEmail}
             title="EMAIL"
-            subtitle={userdata?.email || userdata?.blog || "Não especificado"}
+            subtitle={userdata?.email || userdata?.blog || "Not specified"}
             link={userdata?.email || userdata?.blog}
 />
 
             <Component
             img={inIconn}
             title="LINKEDIN"
-            subtitle={"Não especificado"}
+            subtitle={"Not specified"}
             link={userdata?.twitter_username ? `https://linkedin.com/in/${userdata.twitter_username}` : undefined}
             />
 
@@ -138,9 +138,6 @@ const handleSearch = async () => {
     )}
   </div>
 </div>
-
-
-
     </div>
   )
 }

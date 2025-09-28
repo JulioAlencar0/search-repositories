@@ -271,7 +271,7 @@ h4{
   font-weight: 200;
   font-style: normal;
   margin: 0 auto; /* centraliza horizontalmente */
-  height: 100%;  /* faz ocupar toda a altura da boxRep */
+  height: 350px;  /* faz ocupar toda a altura da boxRep */
 }
 
 .emptyIcon {
